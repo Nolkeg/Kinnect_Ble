@@ -6,6 +6,7 @@ public class GetJointPositionDemo : MonoBehaviour
 {
 	// the joint we want to track
 	public KinectWrapper.NuiSkeletonPositionIndex joint = KinectWrapper.NuiSkeletonPositionIndex.HandRight;
+	//save joint index value for use
 
 	// joint position at the moment, in Kinect coordinates
 	public Vector3 outputPosition;
@@ -46,19 +47,19 @@ public class GetJointPositionDemo : MonoBehaviour
 			}
 		}
 
-		// get the joint position
+		// get the joint position every frame
 		KinectManager manager = KinectManager.Instance;
 
-		if(manager && manager.IsInitialized())
+		if(manager && manager.IsInitialized()) // check if kinnect is connected
 		{
-			if(manager.IsUserDetected())
+			if(manager.IsUserDetected()) // check if there's any user in the screen
 			{
-				uint userId = manager.GetPlayer1ID();
+				uint userId = manager.GetPlayer1ID(); //if there's player on screen, save the player id to a variable
 
-				if(manager.IsJointTracked(userId, (int)joint))
+				if(manager.IsJointTracked(userId, (int)joint)) //check if the manager is tracking the joint we need
 				{
 					// output the joint position for easy tracking
-					Vector3 jointPos = manager.GetJointPosition(userId, (int)joint);
+					Vector3 jointPos = manager.GetJointPosition(userId, (int)joint); //method to get joint value
 					outputPosition = jointPos;
 
 					if(isSaving)
