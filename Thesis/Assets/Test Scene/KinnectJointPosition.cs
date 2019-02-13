@@ -31,6 +31,8 @@ public class KinnectJointPosition : MonoBehaviour
 		{
 			Vector3 tempPose = manager.GetJointPosition(userId, (int)RightHandJointIndex); //method to get joint value
 			tempPose.z = 0;
+			tempPose.x = tempPose.x * 10;
+			tempPose.y = tempPose.y * 10;
 			RightJointPosition = tempPose;
 		}
 	}
@@ -41,6 +43,8 @@ public class KinnectJointPosition : MonoBehaviour
 		{
 			Vector3 tempPose = manager.GetJointPosition(userId, (int)LeftHandJointIndex); //method to get joint value
 			tempPose.z = 0;
+			tempPose.x = tempPose.x * 10;
+			tempPose.y = tempPose.y *10;
 			LeftJointPosition = tempPose;
 		}
 	}
