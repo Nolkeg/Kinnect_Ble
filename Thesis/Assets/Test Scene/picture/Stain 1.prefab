@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 134532488267601857}
   - component: {fileID: 2931956683405180290}
+  - component: {fileID: 8982444808611914041}
+  - component: {fileID: 823332846254380987}
   m_Layer: 0
   m_Name: Stain 1
   m_TagString: Untagged
@@ -79,3 +81,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8982444808611914041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061277332015955619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb426b54a996714cb5bd069d9d7672b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage3: {fileID: 21300000, guid: 4f0fdc128ca14cd4da609e27548ad792, type: 3}
+  Stage2: {fileID: 21300000, guid: 3e43a1ed6376fe6468baf4c289d7ccaf, type: 3}
+  Stage1: {fileID: 21300000, guid: 22bf05a57dc633944885030f155a6afe, type: 3}
+  calHP: 0
+  HP: 2
+--- !u!70 &823332846254380987
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061277332015955619}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.5856256, y: 1.5856256}
+  m_Direction: 0

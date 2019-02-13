@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 55556783405982749}
   - component: {fileID: 8121705009726611029}
   - component: {fileID: 8192579962951075186}
-  - component: {fileID: 2695326088617317772}
+  - component: {fileID: 3434853471902634720}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Hand
@@ -51,6 +51,7 @@ MonoBehaviour:
   nobrandSprite: {fileID: 21300000, guid: ec10f5a7bae4f5d459ff5d47f671f0ef, type: 3}
   defaultSpriteRight: {fileID: 21300000, guid: 4928a8760b9308a4995e22bdcda08b01, type: 3}
   defaultSpriteLeft: {fileID: 21300000, guid: f135bdef7672f8e418b630facb3c1502, type: 3}
+  handSprite: {fileID: 0}
   myHand: 0
 --- !u!58 &8192579962951075186
 CircleCollider2D:
@@ -65,10 +66,10 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00000023841858, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
---- !u!50 &2695326088617317772
+  m_Radius: 0.57411504
+--- !u!50 &3434853471902634720
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -87,7 +88,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &55556784596998637
 GameObject:
@@ -280,7 +281,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: L
+  m_text: R
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 545cd5b9307fdd048a76e5e76530f1e7, type: 2}
   m_sharedMaterial: {fileID: 21161146049204356, guid: 545cd5b9307fdd048a76e5e76530f1e7,
@@ -309,8 +310,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.5
-  m_fontSizeBase: 1.5
+  m_fontSize: 5.29
+  m_fontSizeBase: 5.29
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -327,7 +328,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0

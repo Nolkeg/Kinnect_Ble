@@ -4,49 +4,70 @@ using UnityEngine;
 
 public class Stain : MonoBehaviour
 {
-	//GameObject hand;
-	GameObject hand;
-	Hand enemyHand;
+
+	enum StainState { Stage3,Stage2,Stage1 }
+	StainState currentStainState;
+
 	public Sprite Stage3,Stage2,Stage1;
+
 	SpriteRenderer stainSprite;
 	public int calHP;
 	public int HP = 2;
+
+	public delegate void DamageDelegate(int damage);
+	public event DamageDelegate DamageEvent;
+
+
     void Start()
     {
 		calHP = HP;
 		stainSprite = GetComponent<SpriteRenderer>();
+		currentStainState = StainState.Stage3;
+		DamageEvent += TakeDamage;
     }
 
     
     void Update()
     {
-		if(calHP <= 0)
-		{
-			if (stainSprite.sprite)
-				stainSprite.sprite = Stage2;
-		}
+		
     }
 
-	private void OnTriggerEnter2D(Collider2D collision)
+	public void OnHitHandler(int damage)
 	{
-		gameObject.SetActive(false);
-		/*if (collision.CompareTag("Hand"))
-		{
-			if (collision.GetComponent<Hand>() != null)
-			{
-				hand = collision.gameObject;
-				enemyHand =hand.GetComponent<Hand>();
-				print("hit");
-				if (enemyHand.handSprite == enemyHand.sunlightSprite)
-				{
-					HP -= 2;
-				}
-				else if (enemyHand.handSprite == enemyHand.nobrandSprite)
-				{
-					HP--;
-				}
-			}
-		}*/
-
+		if (DamageEvent == null)
+			return;
+		DamageEvent(damage);
 	}
+
+	void TakeDamage(int damageTaken)
+	{
+		calHP -= damageTaken;
+		if (calHP <= 0 && currentStainState == StainState.Stage1)
+		{
+			gameObject.SetActive(false);
+		}
+		else if (calHP<=0)
+		{
+			calHP = HP;
+			currentStainState++;
+			ChangeSprite();
+		}
+	}
+
+	void ChangeSprite()
+	{
+		switch (currentStainState)
+		{
+			case StainState.Stage3:
+				stainSprite.sprite = Stage3;
+				break;
+			case StainState.Stage2:
+				stainSprite.sprite = Stage2;
+				break;
+			case StainState.Stage1:
+				stainSprite.sprite = Stage1;
+				break;
+		}
+	}
+
 }

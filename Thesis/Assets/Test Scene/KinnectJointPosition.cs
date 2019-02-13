@@ -9,10 +9,15 @@ public class KinnectJointPosition : MonoBehaviour
 	public KinectWrapper.NuiSkeletonPositionIndex LeftHandJointIndex = KinectWrapper.NuiSkeletonPositionIndex.HandLeft;
 	public Vector3 LeftJointPosition,RightJointPosition;
 
+
+	private void Start()
+	{
+		manager = KinectManager.Instance;
+	}
 	// Update is called once per frame
 	void Update()
 	{
-		manager = KinectManager.Instance;
+		
 
 		if (manager && manager.IsInitialized()) // check if kinnect is connected
 		{
