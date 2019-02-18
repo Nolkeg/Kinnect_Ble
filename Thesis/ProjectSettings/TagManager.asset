@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Hand
   - Nobrand
   - Sunlight
-  - Hand
   - Stain
   layers:
   - Default
@@ -18,7 +18,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - Hand
   - 
   - 
   - 
@@ -48,7 +48,10 @@ TagManager:
   - name: UI
     uniqueID: 2225179049
     locked: 0
-  - name: Stain
+  - name: BG
+    uniqueID: 2199873723
+    locked: 0
+  - name: Button
     uniqueID: 3902380343
     locked: 0
   - name: Hand

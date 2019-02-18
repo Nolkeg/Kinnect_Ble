@@ -6,6 +6,8 @@ public class Hand : MonoBehaviour
 {
 
 	KinnectJointPosition jointPosition;
+
+
 	[SerializeField] int sunlightDamage = 2;
 	[SerializeField] int nobrandDamage = 1;
 	int defaultDamage = 0;
