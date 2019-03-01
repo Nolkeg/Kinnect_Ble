@@ -4,24 +4,36 @@ using UnityEngine;
 
 public class Hand2 : MonoBehaviour
 {
-	KinnectJointPosition jointPosition;
+	[SerializeField] KinnectJointPosition jointPosition;
 	enum hand { LeftHand, RightHand };
+	enum user { user1, user2 };
 	[SerializeField] hand myHand;
+	[SerializeField] user thisUser;
 
-	void Start()
-    {
-		jointPosition = FindObjectOfType<KinnectJointPosition>();
-	}
-	
 	void Update()
 	{
-		if (myHand == hand.LeftHand)
+		if(thisUser == user.user1)
 		{
-			transform.position = jointPosition.LeftJointPosition;
+			if (myHand == hand.LeftHand)
+			{
+				transform.position = jointPosition.LeftJointPosition;
+			}
+			else if (myHand == hand.RightHand)
+			{
+				transform.position = jointPosition.RightJointPosition;
+			}
 		}
-		else if (myHand == hand.RightHand)
+		else if (thisUser == user.user2)
 		{
-			transform.position = jointPosition.RightJointPosition;
+			if (myHand == hand.LeftHand)
+			{
+				transform.position = jointPosition.LeftJointPosition2;
+			}
+			else if (myHand == hand.RightHand)
+			{
+				transform.position = jointPosition.RightJointPosition2;
+			}
 		}
+
 	}
 }

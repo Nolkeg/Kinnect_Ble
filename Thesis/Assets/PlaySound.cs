@@ -9,6 +9,7 @@ public class PlaySound : MonoBehaviour
 	[SerializeField] AudioClip[] sounds;
 	[SerializeField] float delay = 0.5f;
 
+
 	AudioSource source;
 	bool IsTouchingHand;
 	bool IsPlaying;
@@ -16,7 +17,6 @@ public class PlaySound : MonoBehaviour
     void Start()
     {
 		IsTouchingHand = false;
-		Debug.Log("test");
 		source = GetComponent<AudioSource>();
 		calculateTime = maximumTimeToPlay;
     }
@@ -47,6 +47,7 @@ public class PlaySound : MonoBehaviour
 		{
 			IsTouchingHand = false;
 			StopAllCoroutines();
+			source.Stop();
 		}
 	}
 
