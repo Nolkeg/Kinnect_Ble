@@ -2,45 +2,65 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 public class Exit : MonoBehaviour
 {
 	[SerializeField] float timeDelay = 2f;
+	float fillAmount = 0;
 	float timeCount;
-	bool IsTouchByHand;
+	float timeDif;
+	bool isTouchByHand;
+	Hand2 currentHand;
+
+
 	private void Start()
 	{
 		timeCount = timeDelay;
+		timeDif = 0;
 	}
 
 	private void Update()
 	{
-		if(IsTouchByHand)
+		if (isTouchByHand)
 		{
 			timeCount -= Time.deltaTime;
+			timeDif = timeDelay - timeCount;
+			currentHand.loadImage.fillAmount = timeDif / 3;
 		}
-		else
-		{
-			timeCount = timeDelay;
-		}
-		if(timeCount <= 0)
+
+		if (timeCount <= 0)
 		{
 			SceneManager.LoadScene(0);
 		}
-		
+
 	}
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if(collision.CompareTag("Hand"))
+		if (currentHand != null)
+			return;
+
+		if (collision.CompareTag("Hand"))
 		{
-			IsTouchByHand = true;
+			currentHand = collision.GetComponent<Hand2>();
+			isTouchByHand = true;
+			transform.DOScale(new Vector3(1.65f, 1.65f, 1.65f), 0.25f);
 		}
+		
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		if(collision.CompareTag("Hand"))
+		if (collision.GetComponent<Hand2>() != currentHand)
+			return;
+
+		if (collision.CompareTag("Hand"))
 		{
-			IsTouchByHand = false;
+			currentHand.loadImage.fillAmount = 0;
+			isTouchByHand = false;
+			timeCount = timeDelay;
+			timeDif = 0;
+			transform.DOScale(new Vector3(1.35f, 1.35f, 1.35f), 0.25f);
+			currentHand = null;
 		}
 	}
 

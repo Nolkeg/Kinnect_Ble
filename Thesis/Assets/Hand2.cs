@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Hand2 : MonoBehaviour
 {
 	[SerializeField] KinnectJointPosition jointPosition;
@@ -9,11 +9,10 @@ public class Hand2 : MonoBehaviour
 	enum user { user1, user2 };
 	[SerializeField] hand myHand;
 	[SerializeField] user thisUser;
+	public Image loadImage;
 
 	void Update()
 	{
-		
-
 		if(thisUser == user.user1)
 		{
 			if (myHand == hand.LeftHand)
