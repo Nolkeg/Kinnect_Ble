@@ -13,6 +13,7 @@ public class Hand2 : MonoBehaviour
 
 	void Update()
 	{
+		/*
 		if(thisUser == user.user1)
 		{
 			if (myHand == hand.LeftHand)
@@ -34,7 +35,7 @@ public class Hand2 : MonoBehaviour
 			{
 				transform.position = jointPosition.RightJointPosition2;
 			}
-		}
+		}*/
 		
 	}
 }

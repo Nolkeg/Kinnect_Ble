@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
 public class SongChoice : MonoBehaviour
 {
 	[SerializeField] int songindex;
@@ -12,13 +13,11 @@ public class SongChoice : MonoBehaviour
 	float timeDif;
 	bool isTouchByHand = false;
 	BackgroundChanger bgChanger;
-	Animator anim;
 	Hand2 currentHand;
 
 	private void Start()
 	{
 		bgChanger = FindObjectOfType<BackgroundChanger>();
-		anim = GetComponent<Animator>();
 		timeCount = timeDelay;
 		timeDif = 0;
 	}
@@ -50,7 +49,7 @@ public class SongChoice : MonoBehaviour
 			if(currentHand.loadImage != null)
 			{
 				isTouchByHand = true;
-				anim.SetBool("Zoom", true);
+				transform.DOScale(1f, 0.25f);
 				bgChanger.OnSongChangeHandler(songindex - 1);
 			}
 		}
@@ -67,7 +66,7 @@ public class SongChoice : MonoBehaviour
 			isTouchByHand = false;
 			timeCount = timeDelay;
 			timeDif = 0;
-			anim.SetBool("Zoom", false);
+			transform.DOScale(0.88f, 0.25f);
 			currentHand = null;
 		}
 	}
