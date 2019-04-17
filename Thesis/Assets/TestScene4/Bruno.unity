@@ -249,7 +249,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bc48b5fd717f71b4e9f7e27db73972a8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 54795ac190e7cd14cb60921609ddc6f0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -648,7 +648,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d3846cdcb8332324693c4520b2809ff5, type: 3}
+      objectReference: {fileID: 8300000, guid: ebfc88bf6f6724f48942f0bcc357a1dc, type: 3}
     - target: {fileID: 8951978707543411752, guid: 3af33c5f777eede4e810107039b4850b,
         type: 3}
       propertyPath: Mute
@@ -1144,7 +1144,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Taylor Swift - Shake It Off
+  m_Text: Mark Ronson - UpTown Funk
 --- !u!222 &1418967305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1250,21 +1250,6 @@ PrefabInstance:
       propertyPath: loadImage
       value: 
       objectReference: {fileID: 102113976}
-    - target: {fileID: 7019186339825415797, guid: 9e49d4975f025bb4ea6d134f0a86c982,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.7176471
-      objectReference: {fileID: 0}
-    - target: {fileID: 7019186339825415797, guid: 9e49d4975f025bb4ea6d134f0a86c982,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.5529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 7019186339825415797, guid: 9e49d4975f025bb4ea6d134f0a86c982,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.5529412
-      objectReference: {fileID: 0}
     - target: {fileID: 7019186339361328398, guid: 9e49d4975f025bb4ea6d134f0a86c982,
         type: 3}
       propertyPath: m_Color.r
@@ -1279,6 +1264,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.5512638
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019186339825415797, guid: 9e49d4975f025bb4ea6d134f0a86c982,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019186339825415797, guid: 9e49d4975f025bb4ea6d134f0a86c982,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019186339825415797, guid: 9e49d4975f025bb4ea6d134f0a86c982,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.5529412
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e49d4975f025bb4ea6d134f0a86c982, type: 3}
@@ -1418,13 +1418,7 @@ PrefabInstance:
         electric bass (\u0E40\u0E1A\u0E2A\u0E44\u0E1F\u0E1F\u0E49\u0E32) , electric
         bass guitar (\u0E01\u0E35\u0E15\u0E32\u0E23\u0E4C\u0E40\u0E1A\u0E2A\u0E44\u0E1F\u0E1F\u0E49\u0E32)
         \u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E23\u0E35\u0E22\u0E01\u0E2A\u0E31\u0E49\u0E19
-        \u0E46 \u0E27\u0E48\u0E32 bass (\u0E40\u0E1A\u0E2A) \u0E25\u0E31\u0E01\u0E29\u0E13\u0E30\u0E02\u0E2D\u0E07\u0E40\u0E1A\u0E2A\u0E21\u0E35\u0E02\u0E19\u0E32\u0E14\u0E43\u0E2B\u0E0D\u0E48\u0E01\u0E27\u0E48\u0E32\u0E01\u0E35\u0E15\u0E32\u0E23\u0E4C
-        \u0E21\u0E35\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E02\u0E2D\u0E07\u0E04\u0E2D\u0E17\u0E35\u0E48\u0E43\u0E2B\u0E0D\u0E48\u0E41\u0E25\u0E30\u0E22\u0E32\u0E27\u0E01\u0E27\u0E48\u0E32
-        \u0E21\u0E35\u0E22\u0E48\u0E32\u0E19\u0E04\u0E27\u0E32\u0E21\u0E16\u0E35\u0E48\u0E40\u0E2A\u0E35\u0E22\u0E07\u0E15\u0E48\u0E33
-        \u0E21\u0E35\u0E2B\u0E19\u0E49\u0E32\u0E17\u0E35\u0E48\u0E42\u0E14\u0E22\u0E2B\u0E25\u0E31\u0E01
-        \u0E46 \u0E43\u0E19\u0E01\u0E32\u0E23\u0E43\u0E2B\u0E49\u0E08\u0E31\u0E07\u0E2B\u0E27\u0E30
-        \u0E04\u0E37\u0E2D\u0E04\u0E38\u0E21\u0E08\u0E31\u0E07\u0E2B\u0E27\u0E30\u0E15\u0E32\u0E21
-        rhythm, line, pattern \u0E41\u0E25\u0E30 groove \u0E02\u0E2D\u0E07\u0E14\u0E19\u0E15\u0E23\u0E35 "
+        \u0E46 \u0E27\u0E48\u0E32 bass (\u0E40\u0E1A\u0E2A)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa46cef4299cf5442bd46ebaebfad2a3, type: 3}
@@ -1444,7 +1438,7 @@ PrefabInstance:
     - target: {fileID: 6549967168442913824, guid: aa46cef4299cf5442bd46ebaebfad2a3,
         type: 3}
       propertyPath: m_Name
-      value: DetailHorn
+      value: DetailBG
       objectReference: {fileID: 0}
     - target: {fileID: 6549967168442913824, guid: aa46cef4299cf5442bd46ebaebfad2a3,
         type: 3}
@@ -1560,22 +1554,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8777b960f22ee464c8f9270bc7eb018e,
+      objectReference: {fileID: 21300000, guid: 512bc3ac1a5e56742a9549a10abc7753,
         type: 3}
     - target: {fileID: 6549967168568458333, guid: aa46cef4299cf5442bd46ebaebfad2a3,
         type: 3}
       propertyPath: m_Text
-      value: "\t\u0E2E\u0E2D\u0E23\u0E4C\u0E19 (\u0E2D\u0E31\u0E07\u0E01\u0E24\u0E29:
-        Horn) \u0E40\u0E1B\u0E47\u0E19\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E14\u0E19\u0E15\u0E23\u0E35\u0E0A\u0E19\u0E34\u0E14\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E40\u0E1B\u0E48\u0E32\u0E25\u0E21\u0E17\u0E2D\u0E07\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E07
-        \u0E40\u0E1B\u0E47\u0E19\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E14\u0E19\u0E15\u0E23\u0E35High-Brass
-        \u0E21\u0E35\u0E01\u0E33\u0E1E\u0E27\u0E14\u0E02\u0E19\u0E32\u0E14\u0E04\u0E48\u0E2D\u0E19\u0E02\u0E49\u0E32\u0E07\u0E40\u0E25\u0E47\u0E01
-        \u0E21\u0E35\u0E42\u0E23\u0E40\u0E15\u0E2D\u0E23\u0E4C \u0E41\u0E25\u0E30\u0E21\u0E35\u0E27\u0E32\u0E25\u0E4C\u0E27
-        (\u0E1A\u0E35-\u0E41\u0E1F\u0E25\u0E15\u0E2E\u0E2D\u0E23\u0E4C\u0E19) \u0E43\u0E19\u0E01\u0E32\u0E23\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E40\u0E2A\u0E35\u0E22\u0E07
-        \u0E42\u0E14\u0E22\u0E21\u0E32\u0E01\u0E08\u0E30\u0E43\u0E0A\u0E49\u0E43\u0E19\u0E27\u0E07\u0E42\u0E22\u0E18\u0E27\u0E32\u0E17\u0E34\u0E15
-        \u0E27\u0E07\u0E14\u0E19\u0E15\u0E23\u0E35\u0E25\u0E39\u0E01\u0E17\u0E38\u0E48\u0E07
-        \u0E08\u0E19\u0E16\u0E36\u0E07\u0E27\u0E07\u0E2D\u0E2D\u0E40\u0E04\u0E2A\u0E15\u0E23\u0E32
-        \u0E41\u0E25\u0E30\u0E41\u0E15\u0E23\u0E27\u0E07 \u0E40\u0E14\u0E34\u0E21\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E14\u0E19\u0E15\u0E23\u0E35\u0E0A\u0E19\u0E34\u0E14\u0E19\u0E35\u0E49\u0E19\u0E34\u0E22\u0E21\u0E40\u0E23\u0E35\u0E22\u0E01\u0E27\u0E48\u0E32
-        \u0E40\u0E1F\u0E23\u0E19\u0E0A\u0E4C\u0E2E\u0E2D\u0E23\u0E4C\u0E19"
+      value: "\tBG \u0E40\u0E1B\u0E47\u0E19\u0E40\u0E2A\u0E35\u0E22\u0E07\u0E04\u0E19\u0E2B\u0E23\u0E37\u0E2D\u0E08\u0E30\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E2A\u0E35\u0E22\u0E07\u0E17\u0E35\u0E48\u0E2A\u0E31\u0E07\u0E40\u0E04\u0E23\u0E32\u0E30\u0E2B\u0E4C\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32\u0E01\u0E47\u0E44\u0E14\u0E49
+        \u0E40\u0E2A\u0E35\u0E22\u0E07\u0E1E\u0E27\u0E01\u0E19\u0E35\u0E49\u0E08\u0E30\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E22\u0E34\u0E19\u0E0A\u0E31\u0E14\u0E40\u0E08\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E19\u0E15\u0E23\u0E35\u0E17\u0E35\u0E48\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E15\u0E31\u0E48\u0E07\u0E43\u0E08\u0E43\u0E2B\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E08\u0E38\u0E14\u0E2A\u0E19\u0E43\u0E08\u0E2B\u0E25\u0E31\u0E01\u0E41\u0E15\u0E48\u0E08\u0E30\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E04\u0E27\u0E32\u0E21\u0E40\u0E15\u0E47\u0E21\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E04\u0E27\u0E32\u0E21\u0E2D\u0E34\u0E48\u0E21\u0E43\u0E2B\u0E49\u0E01\u0E31\u0E1A\u0E40\u0E1E\u0E25\u0E07\u0E1F\u0E31\u0E07\u0E40\u0E40\u0E25\u0E49\u0E27\u0E25\u0E37\u0E48\u0E19\u0E2B\u0E39"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa46cef4299cf5442bd46ebaebfad2a3, type: 3}
@@ -1980,7 +1965,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 9940c8c7d4954a649878e78c1450c540, type: 3}
+      objectReference: {fileID: 8300000, guid: 604b9489d1abad045b7d90f32b9452b3, type: 3}
     - target: {fileID: 8951978707543411752, guid: 3af33c5f777eede4e810107039b4850b,
         type: 3}
       propertyPath: Mute
@@ -2116,7 +2101,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 104e86b68e08bba418518dbce1bae412, type: 3}
+      objectReference: {fileID: 8300000, guid: 5966b95b46b3d6141b6e855e0f90ef79, type: 3}
     - target: {fileID: 8951978707543411752, guid: 3af33c5f777eede4e810107039b4850b,
         type: 3}
       propertyPath: Mute
@@ -2182,7 +2167,7 @@ PrefabInstance:
     - target: {fileID: 1597857189110240659, guid: 3af33c5f777eede4e810107039b4850b,
         type: 3}
       propertyPath: m_Name
-      value: Horn
+      value: BG
       objectReference: {fileID: 0}
     - target: {fileID: 7114046810073191928, guid: 3af33c5f777eede4e810107039b4850b,
         type: 3}
@@ -2333,13 +2318,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 960c5eb29d7c9d444901f98cc1dccb88,
+      objectReference: {fileID: 21300000, guid: 10dd1d3b52c954f4881026aeb6c8db02,
         type: 3}
     - target: {fileID: 8951978707543411752, guid: 3af33c5f777eede4e810107039b4850b,
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 09117f0ff87eeff418353eed119b5f54, type: 3}
+      objectReference: {fileID: 8300000, guid: 3e0b93cd7c0124a45bc8e7532adbd7c1, type: 3}
     - target: {fileID: 8951978707543411752, guid: 3af33c5f777eede4e810107039b4850b,
         type: 3}
       propertyPath: Mute
@@ -2504,6 +2489,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549967168568458333, guid: aa46cef4299cf5442bd46ebaebfad2a3,
+        type: 3}
+      propertyPath: m_Text
+      value: "\t\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E14\u0E19\u0E15\u0E23\u0E35\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E15\u0E35\u0E01\u0E23\u0E30\u0E17\u0E1A\u0E1B\u0E23\u0E30\u0E01\u0E2D\u0E1A\u0E14\u0E49\u0E27\u0E22\u0E15\u0E31\u0E27\u0E01\u0E25\u0E2D\u0E07\n\u0E41\u0E25\u0E30\u0E09\u0E32\u0E1A\u0E08\u0E33\u0E19\u0E27\u0E19\u0E2B\u0E25\u0E32\u0E22\u0E43\u0E1A
+        \u0E41\u0E25\u0E30\u0E43\u0E0A\u0E49\"\u0E44\u0E21\u0E49\u0E01\u0E25\u0E2D\u0E07\"
+        \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E15\u0E35\u0E04\u0E27\u0E1A\u0E04\u0E38\u0E21\u0E08\u0E31\u0E07\u0E2B\u0E27\u0E30
+        \u0E01\u0E25\u0E2D\u0E07\u0E0A\u0E38\u0E14\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E14\u0E19\u0E15\u0E23\u0E35\u0E17\u0E35\u0E48\u0E21\u0E35\u0E40\u0E2A\u0E35\u0E22\u0E07\u0E2B\u0E19\u0E31\u0E01\u0E41\u0E19\u0E48\u0E19 "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa46cef4299cf5442bd46ebaebfad2a3, type: 3}
